@@ -87,5 +87,13 @@ class Request {
 		$return['request']  = $this->soapClient->__getLastRequest();
 		return $return;
 	}
+	
+	/**
+	* @param boolean $testMode
+	*/
+	public function setTestMode($testMode)
+	{
+	$this->testMode = $testMode;
+	}
 }
 
